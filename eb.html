@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="br-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCALA EB</title>
+</head>
+<body>
+    <H1>CONSULTE SUA ESCALA</H1>
+    <H2>Isira seus dados</H2>
+        Matrícula do Militar: <input type="number" name="Esca1" id="Esca1">
+    <input type="button" value="Verificar"onclick="calcular()">
+    <div id = "res">
+
+    </div>
+    <script>
+         
+        function calcular() {
+        var Esca1 = window.document.querySelector('input#Esca1')
+        var Esca2 = window.document.querySelector('input#Esca2')
+        var res = window.document.querySelector('div#res')
+        var Esc = Number(Esca1.TEXT)
+        res.innerHTML = `Matrícula Aceita Com Sucesso ${Esc}`
+        if (Esc > 60) {
+        res.innerHTML +=`<P>Você Está de <strong>FOLGA</strong>` 
+        }
+        
+        res.innerHTML+= `<P>Sua escala é <strong>Preta</strong>!Você está de folga</p>`
+        }
+        
+
+      
+    </script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html pt-BR="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escala da guarda</title>
+</head>
+<body>
+    <script>
+       var nome = document.getElementById('nick').value
+                var matricula = Number(document.getElementById('matri').value)
+                var batalhão = document.getElementById('bata').value
+                batalhão = batalhão.toUpperCase()
+                var res = document.getElementById('res')
+                res.innerHTML = `<p>Bem-Vindo ${nome}!</p>`
+                function reset(){
+                var reset1 = document.getElementById('nick')
+                var reset2 = document.getElementById('matri')
+                var reset3 = document.getElementById('bata')
+                var reset4 = document.getElementById('res')
+                reset1.value = '';
+                reset2.value = '';
+                reset3.value = '';
+                reset4.innerHTML = 'Resultado';
+                reset4.style.color = 'black';
+            }
+        
+       
+    </script>
+</body>
+</html>
